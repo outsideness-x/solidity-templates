@@ -1,0 +1,43 @@
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
+
+/.states
+/AucFront/node_modules
+/AucFront/.next
+/AucFront/out
+/AucFront/build
+/AucFront/.vercel
+/AucFront/next-env.d.ts
+/AucFront/package-lock.json
+/AucFront/package.json
+/AucFront/package.json.lock
+/AucFront/package.json.lock
+
+/Auction/node_modules
+/Auction/artifacts
+/Auction/cache
+/Auction/ignition
+/Auction/.next
+/Auction/out
+/Auction/build
+/Auction/.vercel
+/Auction/next-env.d.ts
+/Auction/package-lock.json
+/Auction/package.json
+/Auction/package.json.lock
+/Auction/package.json.lock
