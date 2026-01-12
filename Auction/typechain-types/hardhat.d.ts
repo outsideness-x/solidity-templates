@@ -17,23 +17,41 @@ declare module "hardhat/types/runtime" {
       name: "AucEngine",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.AucEngine__factory>;
+    getContractFactory(
+      name: "ReentrancyAuc",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ReentrancyAuc__factory>;
 
     getContractAt(
       name: "AucEngine",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.AucEngine>;
+    getContractAt(
+      name: "ReentrancyAuc",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ReentrancyAuc>;
 
     deployContract(
       name: "AucEngine",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.AucEngine>;
+    deployContract(
+      name: "ReentrancyAuc",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ReentrancyAuc>;
 
     deployContract(
       name: "AucEngine",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.AucEngine>;
+    deployContract(
+      name: "ReentrancyAuc",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ReentrancyAuc>;
 
     // default types
     getContractFactory(
