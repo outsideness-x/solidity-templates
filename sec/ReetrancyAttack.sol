@@ -17,6 +17,12 @@ contract ReentrancyAuc {
 
             bidders[msg.sender] = 0;
         }
+
+        //if (refundAmount > 0) {
+        //	bidders[msg.sender] = 0;
+        //    (bool success,) = msg.sender.call{value: refundAmount}("");
+        //    require(success, "refund failed");
+        //} // fixed version -- check-effects-interactions pattern
     }
 
     function currentBalance() external view returns(uint) {
